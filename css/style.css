@@ -1,0 +1,76 @@
+/* Temas */
+[theme="dark"] {
+  --font: #ffffff;
+  --background: #303331;
+  --btn: #343D5B;
+  --btn-sw: #6b6868;
+  --right-sw: unset;
+  --left-sw: 0;
+  --line: #8a8a8a;
+}
+
+[theme="light"] {
+  --font: #303331;
+  --background: #ffffff;
+  --btn: orange;
+  --btn-sw: #ebe7e7;
+  --right-sw: 0;
+  --left-sw: unset;
+  --line: #eee;
+}
+
+/* Cuerpo   */
+body{
+  background-color: var(--background);
+  color: var(--font);
+}
+
+/* Cabezera */
+header {
+  border-bottom: 2px solid var(--line);
+  display:flex;
+  width: 100%;
+  height: 70px;
+}
+
+header a {
+  position: relative;
+  top: -15%;
+  text-decoration: none;
+  color: var(--font);
+}
+
+/* Botón de cambio de tema */
+.switch {
+  left: 84%;
+  top: 25%;
+  height: 30px;
+  background: var(--btn);
+  color: var(--font);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+}
+
+/* Bola */
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  color: var(--font);
+}
+
+.switch::after {
+  width: 30px;
+  height: 30px;
+  content: "";
+  background: var(--btn-sw);
+  border-radius: 10px;
+  position: absolute;
+  transition: .3s ease all;
+  right: var(--right-sw);
+  left: var(--left-sw);
+  top: 0;
+}
