@@ -35,15 +35,20 @@ header {
 
 header a {
   position: relative;
+  left: 45%;
   top: -15%;
   text-decoration: none;
   color: var(--font);
 }
 
+.right {
+  left: 84%;
+  top: 20%;
+  position: relative;
+}
+
 /* Botón de cambio de tema */
 .switch {
-  left: 84%;
-  top: 25%;
   height: 30px;
   background: var(--btn);
   color: var(--font);
@@ -51,7 +56,6 @@ header a {
   border: none;
   cursor: pointer;
   display: flex;
-  position: relative;
 }
 
 /* Bola */
