@@ -33,17 +33,19 @@ header {
   height: 70px;
 }
 
-a {
-  text-decoration: none;
-  color: var(--font);
-}
-
 header a {
   position: relative;
   left: 45%;
   top: -15%;
 }
 
+/* Enlace */
+a {
+  text-decoration: underline;
+  color: var(--font);
+}
+
+/* Derecha */
 .right {
   left: 84%;
   top: 20%;
